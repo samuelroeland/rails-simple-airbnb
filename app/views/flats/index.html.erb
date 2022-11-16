@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>All our flats</h1>
+  <div class="card-container d-flex justify-content-between">
+    <ul class="list-style-type: none">
+      <% @flats.each do |flat| %>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title"><%= flat.name %></h5>
+          <p class="card-text"><%= flat.description %></p>
+          <%= link_to "More info", flat_path(flat) %>
+        </div>
+</div>
+      <% end %>
+    </ul>
+  </div>
+</div>

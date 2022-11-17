@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Flat details:</h1>
+  <ul>
+    <li><%= @flat.name %></li>
+    <li>Address: <%= @flat.address %></li>
+    <li>Description: <%= @flat.description %></li>
+    <li>Price per night: <%= @flat.price_per_night %></li>
+    <li>Number of guests: <%= @flat.number_of_guests %></li>
+  </ul>
+  <%= link_to "Edit this flat", edit_flat_path(@flat) %>
+  <%= link_to "Go back to flats", flats_path %>
+
+</div>
